@@ -11,7 +11,7 @@ from KNN import KNN
 
 cmap = ListedColormap(['#FF0000','#00FF00','#0000FF'])
 
-iris = datasets.load_iris()
+iris = datasets.load_breast_cancer()
 X, y = iris.data, iris.target
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1234)
